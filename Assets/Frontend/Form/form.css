@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Exa:wght@100..900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Montserrat:wght@200;300;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@200;300;500;600&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color: rgb(234, 234, 234);
+}
+.contain{
+  
+    font-family: "Livvic",sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.form{
+    margin-top: 80px;
+    color: #807D7D;
+    background-color: white!important;
+    width: 1200px;
+    border: 2px solid #24BDBD;
+    height: 1300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.column-two{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.two-columns{
+    display: flex;
+    flex-direction: row;
+}
+.name-age{
+    display: flex;
+    flex-direction: row;
+
+}
+.name{
+    margin: 0px 40px;
+}
+.age{
+    margin: 0px 40px;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    margin-bottom: 27px;
+}
+
+#Primary-Education{
+    margin: 10px;
+
+}
+#Undergraduate{
+    margin: 10px;
+}
+#Twelve{
+    margin: 10px;
+}
+#Ten{
+    margin: 10px;
+}
+#Post-Graduate{
+    margin: 10px;
+    margin-left: 70px;
+}
+#None{
+    margin: 10px;
+    margin-left: 70px;
+}
+
+#education-text{
+    margin: 10px;
+
+}
+#name-input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    width: 300px;
+    border: 2px solid rgb(188, 185, 185);
+}
+
+#name-input:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+
+#age-input{
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 0px;
+    border: 2px solid rgb(188, 185, 185);
+}
+#age-input:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+
+#age-text{
+    margin: 10px;
+    margin-left: 0;
+    
+}
+#name-text{
+    margin: 10px;
+    margin-left: 0;
+}
+
+.Gender{
+    margin: 25px;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    
+}
+#male{
+    margin: 10px;
+}
+#male:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+#female{
+    margin: 10px;
+}
+#female:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+#other{
+    margin: 10px;
+}
+#output:focus{
+    outline: none;
+    background-color:  #24BDBD;
+}
+
+.daily-smoker{
+    margin-top: 30px;
+    margin-left: 30px;
+    padding: 10px;
+}
+#yes{
+
+   margin-top:15px;
+}
+#no{
+    margin-left: 40px;
+    padding: 20px;
+
+}
+
+.bp-med-text{
+    margin-top: 18px;
+    margin-left: 35px;
+    
+}
+#bp-yes{
+    padding: 10px;
+    margin-left: 40px;
+    
+}
+
+#bp-no{
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 40px;
+
+}
+
+
+.hypertension{
+    margin-top: 25px;
+    margin-left: 19px;
+    
+}
+#hp-yes{
+    padding: 10px;
+    margin-left: 19px;
+
+}
+#hp-no{
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 40px;
+
+}
+
+
+.cigarettes{
+    margin-top: 25px;
+    margin-left: 35px;
+    
+}
+#cig-num{
+    padding: 10px;
+    width: 300px;
+    margin-top: 15px;
+    border-radius: 5px;
+    
+    border: 2px solid rgb(188, 185, 185);
+}
+#cig-num:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+.common-strokes{
+    margin-left: 30px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+#cs-yes{
+    margin-top: 15px;
+
+}
+
+#cs-no{
+    margin-left: 35px;
+}
+
+.systolic-bp{
+    margin-left: 30px;
+    margin-top: 50px;
+}
+#sbp-num{
+    margin-top:15px ;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(188, 185, 185);
+}
+#sbp-num:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+
+.diastolic-bp{
+    margin: 30px;
+}
+#dbp-num{
+    margin-top:15px ;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    border: 2px solid rgb(188, 185, 185);
+}
+#dbp-num:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+
+.glucose{
+    margin: 30px;
+}
+#g-num{
+    margin-top:15px ;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    border: 2px solid rgb(188, 185, 185);
+}
+#g-num:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+
+.chol{
+    margin: 30px;
+}
+#chol-num{
+    margin-top:15px ;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    border: 2px solid rgb(188, 185, 185);
+}
+#chol-num:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+.hr{
+    margin: 30px;
+    
+}
+#hr-num{
+    margin-top:15px ;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    border: 2px solid rgb(188, 185, 185);
+}
+#hr-num:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+.bmi{
+    margin: 30px;
+}
+#bmi-num{
+    margin-top:15px ;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    border: 2px solid rgb(188, 185, 185);
+}
+#bmi-num:focus{
+    outline: none;
+    border-color:  #24BDBD;
+}
+.column-one{
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.predict{
+    width: 300px;
+    height: 50px;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 23px;
+    color: white;
+    background-color: #24BDBD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    outline: none;
+   
+}
+.predict-button{
+        top: 190%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    
+}
+
+.details{
+    font-size: 30px;
+    color: black;
+    background: #c4c4c4;
+    border-color: #24BDBD;
+    height: 70px;
+    padding: 10px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}

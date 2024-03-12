@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    
+    <div class="max-container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: absolute; z-index: 1;width: 100%;opacity: 0.6;">
+            <div class="container-fluid">
+              <div class="logo">
+                <img src="./heart.png" alt="" class="logo" width="40px">
+              </div>
+              <a class="navbar-brand" href="#" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 700;">HRIDAY</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav" style="text-align: center;">
+                <ul class="navbar-nav">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 400;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 400;">About Us</a>
+                  </li>
+                  <li>
+                  <a class="nav-link active" aria-current="page" href="#" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 400;">Contact Us</a>
+                </li>
+              <li>
+                  <a class="nav-link active" aria-current="page" href="#" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 400;">Forum</a>
+                </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+            <div class="contain">
+                <div class="form">
+                    <p class="details">Details</p>
+
+                    <div class="two-columns">
+
+                        <div class="column-one">
+
+                            <div class="name">
+                                <p id="name-text">Name :</p>
+                                <input type="text" placeholder="Enter your name" id="name-input" >
+                            </div>
+
+                            <div class="education">
+                                <p id="education-text">Education</p>
+                                <div class="education-col-1">
+                                    <input type="checkbox" id="Primary-Education">Primary Education
+                                    <input type="checkbox" name="" id="Undergraduate">Undergraduate
+                                    
+                                </div>
+                                <div class="education-col-2">
+                                    <input type="checkbox" id="Twelve">12th Pass
+                                    <input type="checkbox" name="" id="Post-Graduate">Post Graduate
+                                </div>
+                                <div class="education-col-3">
+                                    <input type="checkbox" name="" id="Ten">10th Pass
+                                    <input type="checkbox" name="" id="None">None
+                                </div>
+                            </div>
+
+                            <div class="Gender">
+                                <p id="gender-text">Gender</p>
+                                <input type="checkbox" name="" id="male">Male
+                                <input type="checkbox" name="" id="female">Female
+                                <input type="checkbox" name="" id="other">Other
+                            </div>
+
+                            <div class="common-strokes">
+                                <p class="common-strokes-text">Are Strokes common in your area?</p>
+                                <input type="checkbox" id="cs-yes"> Yes
+                                <input type="checkbox" name="" id="cs-no"> No
+                            </div>
+
+                            <div class="systolic-bp">
+                                <p class="sbp-text">Systolic Blood Pressure</p>
+                                <input type="number" placeholder="mm Hg" id="sbp-num" >
+                            </div>
+
+                            <div class="diastolic-bp">
+                                <p class="dbp-text">Diastolic Blood Pressure</p>
+                                <input type="number" id="dbp-num" placeholder="mm Hg">
+                            </div>
+
+                            <div class="glucose">
+                                <p class="glucose-text">Glucose</p>
+                                <input type="number" id="g-num" placeholder="mg/dL">
+                            </div>
+                        </div>
+
+
+
+                        <div class="column-two">
+
+                            <div class="age">
+                                <p id="age-text">Age : </p>
+                                <input type="text" placeholder="Enter Age" id="age-input">
+                            </div>
+                            
+                            <div class="daily-smoker">
+                                <p id="daily-smoker-text">Are you a daily smoker?</p>
+                                <input type="checkbox" name="" id="yes">Yes
+                                <input type="checkbox" name="" id="no">No
+                            </div>
+
+                            <div class="blood-pressure-med">
+                                <p class="bp-med-text">Are you currently on any blood pressure medicnes?</p>
+                                <input type="checkbox" name="" id="bp-yes">Yes
+                                <input type="checkbox" name="" id="bp-no">No
+                            </div>
+
+                            <div class="hypertension">
+                                <p class="hypertension">Is Hypertension common in your area and at a particular time?</p>
+                                
+                                <input type="checkbox" name="" id="hp-yes">Yes
+                                <input type="checkbox" name="" id="hp-no">No
+
+                            </div>
+
+                            <div class="cigarettes">
+                                <p class="cigarettes-text">How many cigarettes do you smoke in a day?</p>
+                                <input type="number" placeholder="Cigarettes smoked in a day" id="cig-num">
+                            </div>
+
+                            <div class="chol">
+                                <p class="chol-text">Cholestrol</p>
+                                <input type="number" placeholder="mg/dL" id="chol-num" >
+                            </div>
+
+                            <div class="hr">
+                                <p class="hr-text">Heartrate</p>
+                                <input type="number" id="hr-num" placeholder="beats/min">
+                            </div>
+
+                            <div class="bmi">
+                                <p class="bmi-text">BMI</p>
+                                <input type="number" id="bmi-num" placeholder="kg/m^2">
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+                <div class="predict-button">
+                    <button class="predict">Predict</button>
+                </div>
+            </div>
+           
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
