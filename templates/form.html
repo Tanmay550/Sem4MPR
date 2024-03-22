@@ -6,7 +6,7 @@
     <title>Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='form.css') }}">
 </head>
 <body>
     
@@ -41,7 +41,7 @@
           </nav>
 
             <div class="contain">
-                <div class="form">
+                <form action="{{url_for('HeartDiseasePrediction')}}" method="POST" class="form" id= "form">
                     <p class="details">Details</p>
 
                     <div class="two-columns">
@@ -56,46 +56,46 @@
                             <div class="education">
                                 <p id="education-text">Education</p>
                                 <div class="education-col-1">
-                                    <input type="checkbox" id="Primary-Education">Primary Education
-                                    <input type="checkbox" name="" id="Undergraduate">Undergraduate
+                                    <input type="checkbox" id="Primary-Education" name = "eduP">Primary Education
+                                    <input type="checkbox" name="eduU" id="Undergraduate">Undergraduate
                                     
                                 </div>
                                 <div class="education-col-2">
-                                    <input type="checkbox" id="Twelve">12th Pass
-                                    <input type="checkbox" name="" id="Post-Graduate">Post Graduate
+                                    <input type="checkbox" name = "eduT" id="Twelve">12th Pass
+                                    <input type="checkbox" name="eduPost" id="Post-Graduate">Post Graduate
                                 </div>
                                 <div class="education-col-3">
-                                    <input type="checkbox" name="" id="Ten">10th Pass
-                                    <input type="checkbox" name="" id="None">None
+                                    <input type="checkbox" name="eduTenth" id="Ten">10th Pass
+                                    <input type="checkbox" name="eduN" id="None">None
                                 </div>
                             </div>
 
                             <div class="Gender">
                                 <p id="gender-text">Gender</p>
-                                <input type="checkbox" name="" id="male">Male
-                                <input type="checkbox" name="" id="female">Female
-                                <input type="checkbox" name="" id="other">Other
+                                <input type="checkbox" name="genderM" id="male">Male
+                                <input type="checkbox" name="genderF" id="female">Female
+                                <input type="checkbox" name="genderO" id="other">Other
                             </div>
 
                             <div class="common-strokes">
                                 <p class="common-strokes-text">Are Strokes common in your area?</p>
-                                <input type="checkbox" id="cs-yes"> Yes
-                                <input type="checkbox" name="" id="cs-no"> No
+                                <input type="checkbox" name="strokeY" id="cs-yes"> Yes
+                                <input type="checkbox" name="strokeN" id="cs-no"> No
                             </div>
 
                             <div class="systolic-bp">
                                 <p class="sbp-text">Systolic Blood Pressure</p>
-                                <input type="number" placeholder="mm Hg" id="sbp-num" >
+                                <input type="number" name = "sysbp" placeholder="mm Hg" id="sbp-num" >
                             </div>
 
                             <div class="diastolic-bp">
                                 <p class="dbp-text">Diastolic Blood Pressure</p>
-                                <input type="number" id="dbp-num" placeholder="mm Hg">
+                                <input type="number" name = "diabp" id="dbp-num" placeholder="mm Hg">
                             </div>
 
                             <div class="glucose">
                                 <p class="glucose-text">Glucose</p>
-                                <input type="number" id="g-num" placeholder="mg/dL">
+                                <input type="number" id="g-num" name = "glucose" placeholder="mg/dL">
                             </div>
                         </div>
 
@@ -105,66 +105,78 @@
 
                             <div class="age">
                                 <p id="age-text">Age : </p>
-                                <input type="text" placeholder="Enter Age" id="age-input">
+                                <input type="text" name = "age" placeholder="Enter Age" id="age-input">
                             </div>
                             
                             <div class="daily-smoker">
                                 <p id="daily-smoker-text">Are you a daily smoker?</p>
-                                <input type="checkbox" name="" id="yes">Yes
-                                <input type="checkbox" name="" id="no">No
+                                <input type="checkbox" name="smokerY" id="yes">Yes
+                                <input type="checkbox" name="smokerN" id="no">No
                             </div>
 
                             <div class="blood-pressure-med">
                                 <p class="bp-med-text">Are you currently on any blood pressure medicnes?</p>
-                                <input type="checkbox" name="" id="bp-yes">Yes
-                                <input type="checkbox" name="" id="bp-no">No
+                                <input type="checkbox" name="bpmedY" id="bp-yes">Yes
+                                <input type="checkbox" name="bpmedN" id="bp-no">No
                             </div>
 
                             <div class="hypertension">
                                 <p class="hypertension">Is Hypertension common in your area and at a particular time?</p>
                                 
-                                <input type="checkbox" name="" id="hp-yes">Yes
-                                <input type="checkbox" name="" id="hp-no">No
+                                <input type="checkbox" name="hyperY" id="hp-yes">Yes
+                                <input type="checkbox" name="hyperN" id="hp-no">No
 
                             </div>
 
                             <div class="cigarettes">
                                 <p class="cigarettes-text">How many cigarettes do you smoke in a day?</p>
-                                <input type="number" placeholder="Cigarettes smoked in a day" id="cig-num">
+                                <input type="number" placeholder="Cigarettes smoked in a day" name = "cigs" id="cig-num">
                             </div>
 
                             <div class="chol">
                                 <p class="chol-text">Cholestrol</p>
-                                <input type="number" placeholder="mg/dL" id="chol-num" >
+                                <input type="number" placeholder="mg/dL" name = "chol" id="chol-num" >
                             </div>
 
                             <div class="hr">
                                 <p class="hr-text">Heartrate</p>
-                                <input type="number" id="hr-num" placeholder="beats/min">
+                                <input type="number" id="hr-num" name = "heartrate" placeholder="beats/min">
                             </div>
 
                             <div class="bmi">
                                 <p class="bmi-text">BMI</p>
-                                <input type="number" id="bmi-num" placeholder="kg/m^2">
+                                <input type="number" id="bmi-num" name = "bmi" placeholder="kg/m^2">
                             </div>
                         </div>
 
                     </div>
                     
 
-                </div>
+                </form>
                 <div class="predict-button">
-                    <button class="predict">Predict</button>
+                    <button id="predictButton" class="predict">Predict</button>
                 </div>
             </div>
+
+            <br><h4 align="center"<b>{{pred}}</b></h4>
+            <br>
+                
+
+            
            
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-
-
-
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('predictButton').addEventListener('click', function() {
+                    console.log('Predict button clicked');
+                    document.getElementById('form').submit();
+                });
+            });
         </script>
+        
+        
         
 </body>
 </html>
