@@ -58,8 +58,7 @@ body{
 .education{
     display: flex;
     flex-direction: column;
-    margin: 25px;
-    margin-bottom: 27px;
+    margin-top: 25px;
 }
 
 #Primary-Education{
@@ -124,9 +123,9 @@ body{
 }
 
 .Gender{
-    margin: 25px;
-    margin-bottom: 60px;
-    margin-top: 50px;
+    
+    margin-bottom: 20px;
+    margin-top: 20px;
     
 }
 #male{
@@ -224,6 +223,8 @@ body{
     margin-left: 30px;
     margin-bottom: 15px;
     margin-top: 25px;
+    font-size: 200px;
+    
 }
 
 #cs-yes{
@@ -250,7 +251,11 @@ body{
     outline: none;
     border-color:  #24BDBD;
 }
-
+.diabetes{
+    
+    padding: 20px;
+    margin: 100px;
+}
 .diastolic-bp{
     margin: 30px;
 }

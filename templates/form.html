@@ -24,7 +24,7 @@
                 <ul class="navbar-nav">
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 400;">Home</a>
+                    <a class="nav-link" href="/Sem4MPR/Frontend/Landing Page/index.html" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 400;text-decoration: none;">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 400;">About Us</a>
@@ -70,15 +70,22 @@
                                 </div>
                             </div>
 
-                            <div class="Gender">
+                            <div class="Gender" style="margin-top: 20px;margin-bottom: 0px;">
                                 <p id="gender-text">Gender</p>
                                 <input type="checkbox" name="genderM" id="male">Male
                                 <input type="checkbox" name="genderF" id="female">Female
                                 <input type="checkbox" name="genderO" id="other">Other
                             </div>
+                            
+                            <div class="diabetes" style="margin-left: 28px; margin-top: 25px;">
+                                <p id="diabetes">Do you have diabetes?</p>
+                                <input type="checkbox" name="diabetesY" id="yes-diabetes">Yes
+                                <input type="checkbox" name="diabetesN" id="no-diabetes" style="margin-left: 30px;">No
+                                
+                            </div>
 
                             <div class="common-strokes">
-                                <p class="common-strokes-text">Are Strokes common in your area?</p>
+                                <p class="common-strokes-text">Do you have history of strokes?</p>
                                 <input type="checkbox" name="strokeY" id="cs-yes"> Yes
                                 <input type="checkbox" name="strokeN" id="cs-no"> No
                             </div>
@@ -108,32 +115,32 @@
                                 <input type="text" name = "age" placeholder="Enter Age" id="age-input">
                             </div>
                             
-                            <div class="daily-smoker">
+                            <div class="daily-smoker" >
                                 <p id="daily-smoker-text">Are you a daily smoker?</p>
                                 <input type="checkbox" name="smokerY" id="yes">Yes
                                 <input type="checkbox" name="smokerN" id="no">No
                             </div>
 
-                            <div class="blood-pressure-med">
+                            <div class="blood-pressure-med"style="margin-top: 30px;">
                                 <p class="bp-med-text">Are you currently on any blood pressure medicnes?</p>
                                 <input type="checkbox" name="bpmedY" id="bp-yes">Yes
                                 <input type="checkbox" name="bpmedN" id="bp-no">No
                             </div>
 
-                            <div class="hypertension">
-                                <p class="hypertension">Is Hypertension common in your area and at a particular time?</p>
+                            <div class="hypertension" style="margin-top: 35px;">
+                                <p class="hypertension">Do you have history of hypertension?</p>
                                 
                                 <input type="checkbox" name="hyperY" id="hp-yes">Yes
                                 <input type="checkbox" name="hyperN" id="hp-no">No
 
                             </div>
 
-                            <div class="cigarettes">
+                            <div class="cigarettes" style="margin-top: 40px;">
                                 <p class="cigarettes-text">How many cigarettes do you smoke in a day?</p>
                                 <input type="number" placeholder="Cigarettes smoked in a day" name = "cigs" id="cig-num">
                             </div>
 
-                            <div class="chol">
+                            <div class="chol" style="margin-top: 30px;">
                                 <p class="chol-text">Cholestrol</p>
                                 <input type="number" placeholder="mg/dL" name = "chol" id="chol-num" >
                             </div>
@@ -154,11 +161,11 @@
 
                 </form>
                 <div class="predict-button">
-                    <button id="predictButton" class="predict">Predict</button>
+                    <button id="predictButton" class="predict" style="margin-top: 100px;">Predict</button>
                 </div>
             </div>
 
-            <br><h4 align="center"<b>{{pred}}</b></h4>
+            <br><h4 align="center"></h4><b>{{pred}}</b></h4>
             <br>
                 
 

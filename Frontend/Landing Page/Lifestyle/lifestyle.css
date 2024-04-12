@@ -1,0 +1,115 @@
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background: rgb(243, 243, 243);
+    opacity: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item{
+    padding: 15px 50px 10px 50px;
+    font-family: "Inter",sans-serif;
+    color: #009A9A;
+}
+
+#Home{
+    margin-left: 100px;
+}
+
+#hriday{
+    color: #009A9A;
+    font-size: 25px;
+    font-weight: 700;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.yoga{
+ 
+    height: 500px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+   
+}
+.yoga:hover{
+    background-color: rgb(247, 255, 254);
+}
+.exercise{
+
+    height: 500px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #009A9A;
+}
+.exercise:hover{
+    background-color: rgb(247, 255, 254);
+}
+.diet{
+
+    height: 500px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+
+}
+.diet:hover{
+    background-color: rgb(247, 255, 254);
+}
+
+.yoga-image{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    border: 5px solid #009A9A;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
