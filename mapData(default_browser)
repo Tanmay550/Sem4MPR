@@ -1,0 +1,23 @@
+const { exec } = require("child_process");
+
+async function openInDefaultBrowser(url) {
+  try {
+    await exec(`start ${url}`);
+    console.log("Opened in default browser");
+  } catch (error) {
+    console.error("Error opening in default browser:", error);
+  }
+}
+
+async function searchGoogleMaps() {
+  try {
+    const query = `Cardiologist in Mumbai`;
+    const url = `https://www.google.com/maps/search/${query.split(" ").join("+")}`;
+
+    await openInDefaultBrowser(url);
+  } catch (error) {
+    console.error("Error searching on Google Maps:", error);
+  }
+}
+
+searchGoogleMaps();
