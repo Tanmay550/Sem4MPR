@@ -14,7 +14,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary" style="position: absolute; z-index: 1;width: 100%;opacity: 0.6;">
             <div class="container-fluid">
               <div class="logo">
-                <img src="./heart.png" alt="" class="logo" width="40px">
+                <img src="{{ url_for('static', filename='heart.css') }}" alt="" class="logo" width="40px">
               </div>
               <a class="navbar-brand" href="#" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 700;">HRIDAY</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
                 <ul class="navbar-nav">
                   
                   <li class="nav-item">
-                    <a class="nav-link" href="/Sem4MPR/Frontend/Landing Page/index.html" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 400;text-decoration: none;">Home</a>
+                    <a class="nav-link" href="{{ url_for('index') }}" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 400;text-decoration: none;">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#" style="font-family:'Inter',sans-serif ;color: #009A9A;font-weight: 400;">About Us</a>
@@ -70,27 +70,27 @@
                                 </div>
                             </div>
 
-                            <div class="Gender" style="margin-top: 20px;margin-bottom: 0px;">
+                            <div class="Gender" style="margin-top: 20px;margin-bottom: 0px; margin-left: 10px;">
                                 <p id="gender-text">Gender</p>
                                 <input type="checkbox" name="genderM" id="male">Male
                                 <input type="checkbox" name="genderF" id="female">Female
                                 <input type="checkbox" name="genderO" id="other">Other
                             </div>
                             
-                            <div class="diabetes" style="margin-left: 28px; margin-top: 25px;">
+                            <div class="diabetes" style="margin-left: 0px; margin-top: 10px; margin-bottom: 0px; font-size: 20px;">
                                 <p id="diabetes">Do you have diabetes?</p>
                                 <input type="checkbox" name="diabetesY" id="yes-diabetes">Yes
                                 <input type="checkbox" name="diabetesN" id="no-diabetes" style="margin-left: 30px;">No
                                 
                             </div>
 
-                            <div class="common-strokes">
+                            <div class="common-strokes" style="font-size: 20px;">
                                 <p class="common-strokes-text">Do you have history of strokes?</p>
                                 <input type="checkbox" name="strokeY" id="cs-yes"> Yes
                                 <input type="checkbox" name="strokeN" id="cs-no"> No
                             </div>
 
-                            <div class="systolic-bp">
+                            <div class="systolic-bp" style="margin-top: 20px;">
                                 <p class="sbp-text">Systolic Blood Pressure</p>
                                 <input type="number" name = "sysbp" placeholder="mm Hg" id="sbp-num" >
                             </div>

@@ -12,7 +12,33 @@ def predict_probabilities(X, theta):
     return sigmoid(np.dot(X, theta))
 
 @app.route("/")
-def hello():
+def index():
+    return render_template('index.html')
+
+@app.route("/wellbeing")
+def wellbeing():
+    return render_template('wellbeing.html')
+
+@app.route("/symptoms")
+def symptoms():
+    return render_template('Symptoms copy.html')
+
+@app.route("/cause")
+def cause():
+    return render_template('Cause.html')
+
+
+@app.route("/reason")
+def reason():
+    return render_template('reasons.html')
+
+
+@app.route("/food")
+def food():
+    return render_template('food.html')
+
+@app.route("/form")
+def form():
     return render_template('form.html')
 
 @app.route("/predict", methods=['POST'])
