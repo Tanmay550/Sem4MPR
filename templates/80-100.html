@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='after.css') }}">
+</head>
+<body>
+    <navbar class="navbar">
+        <ul class="nav">
+           <li class="nav-item" id="hriday"><img src="{{url_for('static',filename='./heart.png')}}"  alt="Description" style="width: 30px;"> HRIDAY</li>
+            <a class="nav-item" id="Home" href="/Sem4MPR/Frontend/Landing Page/index.html">Home</a>
+            <a class="nav-item" id="About-us">About Us</a>
+            <a class="nav-item" id="Contact-us">Contact Us</a>
+        </ul>
+    </navbar>
+    
+    <div class="content">
+            <h1 class="Prediction">Prediction Result</h1>
+            <p class="Prediction-text">We predict a ten-year coronary heart disease probability of &nbsp <b>{{ pred }} %</b> {{ string }}</p>
+    </div>
+    <div class="features" >
+        
+
+
+        <div class="Lifestyle-button">
+            <div>
+                <img src="{{url_for('static',filename='Lifestyle.png')}}"  alt="Description"  class="Lifestyle-image">
+            </div>
+            <div>
+                <a  class="Lifestyle-box" href="#" style="text-decoration: none;">Lifestyle</a>
+            </div>
+        </div>
+
+
+        <div class="hospital-near-me-button">
+            <div>
+                <img src="{{url_for('static',filename='./hospital-near-me.png')}}" alt="" class="hospital-near-me-image">
+            </div>
+            <div>
+                <a  class="hospital-near-me-box" href="#">Cardiologists near me</a>
+            </div>
+        </div>
+
+
+        <div class="wellbeing-button" >
+            <div>
+                <img src="{{url_for('static',filename='./wellbeing.png')}}" alt="De" class="wellbeing-image">
+
+            </div>
+            <div>
+                <a  class="wellbeing-box" href = "{{ url_for('wellbeing') }}">Well being resources</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -63,7 +63,7 @@ def HeartDiseasePrediction():
     blood_pressure_medication = 1 if request.form.get('bpmedY') == 'on' else 0
     stroke_prevalent = 1 if request.form.get('strokeY') == 'on' else 0
     hypertension = 1 if request.form.get('hyperY') == 'on' else 0
-    diabetes = 0; #temp value until it is included in the form
+    diabetes = 1 if request.form.get('diabetesY') == 'on' else 0; 
     cholestrol = int(request.form.get('chol'))
     systolic_bp = int(request.form.get('sysbp'))
     diastolic_bp = int(request.form.get('diabp'))
@@ -84,8 +84,24 @@ def HeartDiseasePrediction():
     # Print the predicted probability
     print('Predicted probability:', probabilities[0])
     
-    formatted_probability = "{:.3f}".format(probabilities[0] * 100)
-    return render_template('after.html', pred=formatted_probability)
+    formatted_probability = float("{:.3f}".format(probabilities[0] * 100))
+
+
+    
+
+    if formatted_probability > 0 and formatted_probability <= 20:
+        return render_template('0-20.html', pred=formatted_probability, string = "Case 1")
+    elif formatted_probability > 20 and formatted_probability <= 40:
+         return render_template('20-40.html', pred=formatted_probability, string = "Case 2")
+    elif formatted_probability > 40 and formatted_probability <= 60:
+         return render_template('40-60.html', pred=formatted_probability, string = "Case 3")
+    elif formatted_probability > 60 and formatted_probability <= 80:
+         return render_template('60-80.html', pred=formatted_probability, string = "Case 4")
+    else:
+        return render_template('80-100.html', pred=formatted_probability, string = "Aap marne wale ho")
+    
+    
+
 
     
 
