@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>11 Facts You didnt Know about your Heart</title>
-    <link rel="stylesheet" href="reasons.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='reasons.css')}}">
 </head>
 <body>
     <navbar class="navbar">
         <ul class="nav">
-            <li class="nav-item" id="hriday"><img src="./heart.png" style="width: 30px;"> HRIDAY</li>
-            <a class="nav-item" id="Home" href="/Sem4MPR/Frontend/Landing Page/index.html">Home</a>
+            <li class="nav-item" id="hriday"><img src="{{url_for('static',filename='heart.png')}}" style="width: 30px;"> HRIDAY</li>
+            <a class="nav-item" id="Home" href="{{ url_for('index') }}">Home</a>
             <a class="nav-item" id="About-us">About Us</a>
             <a class="nav-item" id="Contact-us">Contact Us</a>
         </ul>
@@ -43,15 +43,15 @@ While you’re probably familiar with a few heart-healthy tips, there are some f
         <div class="right">
             <h2 style="margin: 10px;"> Most Popular</h2>
             <div class="widget1">
-                <img src="./image2.jpg" alt="" class="wid1"  style="width: 200px; height: 100px;">
+                <img src="{{url_for('static',filename='image2.jpg')}}" alt="" class="wid1"  style="width: 200px; height: 100px;">
                 <div class="wid1-text">About 695,000 people die of heart disease in the United States every year–that's 1 in every 5 deaths. </div>
             </div>
             <div class="widget2">
-                <img src="./Heart-Failure.jpg" alt="" class="wid2" href ="#" style="width: 200px; height: 100px;">
+                <img src="{{url_for('static',filename='Heart-Failure.jpg')}}" alt="" class="wid2" href ="#" style="width: 200px; height: 100px;">
                 <div class="wid2-text">Leading risk factors for heart disease and stroke are high blood pressure, high low-density lipoprotein (LDL) cholesterol,</div> 
             </div>
             <div class="widget3">
-                <img src="./heart_food.jpeg" alt="" class="wid3" style="width: 200px; height: 100px;">
+                <img src="{{url_for('static',filename='heart_food.jpeg')}}" alt="" class="wid3" style="width: 200px; height: 100px;">
                 <div class="wid3-text">Fish high in omega-3 fatty acids (salmon, tuna, and trout)
                     Lean meats such as 95% lean ground beef or pork or skinless chicken.
                     </div>

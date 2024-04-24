@@ -19,16 +19,24 @@ def index():
 def wellbeing():
     return render_template('wellbeing.html')
 
+@app.route("/lifestyle")
+def lifestyle():
+    return render_template('lifestyle.html')
+
+@app.route("/map")
+def map():
+    return render_template('map.html')
+
 @app.route("/symptoms")
 def symptoms():
-    return render_template('Symptoms copy.html')
+    return render_template('symptoms.html')
 
 @app.route("/cause")
 def cause():
     return render_template('Cause.html')
 
 
-@app.route("/reason")
+@app.route("/reasons")
 def reason():
     return render_template('reasons.html')
 
@@ -40,6 +48,33 @@ def food():
 @app.route("/form")
 def form():
     return render_template('form.html')
+
+
+@app.route("/diet20")
+def diet20():
+    return render_template('0-20_diet.html')
+
+@app.route("/exercise20")
+def exercise20():
+    return render_template('0-20_exercise.html')
+
+
+@app.route("/diet40")
+def diet40():
+    return render_template('20-40_diet.html')
+
+@app.route("/exercise40")
+def exercise40():
+    return render_template('20-40_exercise.html')
+
+@app.route("/diet60")
+def diet60():
+    return render_template('40-60_diet.html')
+
+@app.route("/exercise60")
+def exercise60():
+    return render_template('40-60_exercise.html')
+
 
 @app.route("/predict", methods=['POST'])
 def HeartDiseasePrediction():

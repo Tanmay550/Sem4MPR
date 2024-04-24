@@ -88,7 +88,7 @@
                         <img src="{{url_for('static',filename='Lifestyle.png')}}" alt="" class="Lifestyle-image">
                     </div>
                     <div>
-                        <p  class="Lifestyle-box">Lifestyle</p>
+                        <a  class="Lifestyle-box" href = "{{ url_for('lifestyle')}}" style="text-decoration: none;">Lifestyle</a>
                     </div>
                 </div>
 
@@ -98,7 +98,7 @@
                         <img src="{{url_for('static',filename='hospital-near-me.png')}}" alt="" class="hospital-near-me-image">
                     </div>
                     <div>
-                        <p  class="hospital-near-me-box">Hospitals Near Me</p>
+                        <a  class="hospital-near-me-box" href = "{{ url_for('map')}}" style="text-decoration: none;">Hospitals Near Me</a>
                     </div>
                 </div>
 
@@ -108,7 +108,7 @@
                         <img src="{{url_for('static',filename='wellbeing.png')}}" alt="" class="wellbeing-image">
                     </div>
                     <div>
-                        <a  class="wellbeing-box" href="{{ url_for('wellbeing') }}">Well being resources</a>
+                        <a  class="wellbeing-box" href="{{ url_for('wellbeing') }}" style="text-decoration: none;">Well being resources</a>
                     </div>
                 </div>
 

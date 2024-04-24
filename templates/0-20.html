@@ -10,7 +10,7 @@
     <navbar class="navbar">
         <ul class="nav">
            <li class="nav-item" id="hriday"><img src="{{url_for('static',filename='./heart.png')}}"  alt="Description" style="width: 30px;"> HRIDAY</li>
-            <a class="nav-item" id="Home" href="/Sem4MPR/Frontend/Landing Page/index.html">Home</a>
+            <a class="nav-item" id="Home" href="{{ url_for('index') }}">Home</a>
             <a class="nav-item" id="About-us">About Us</a>
             <a class="nav-item" id="Contact-us">Contact Us</a>
         </ul>
@@ -29,7 +29,7 @@
                 <img src="{{url_for('static',filename='Lifestyle.png')}}"  alt="Description"  class="Lifestyle-image">
             </div>
             <div>
-                <a  class="Lifestyle-box" href="#" style="text-decoration: none;">Lifestyle</a>
+                <a  class="Lifestyle-box" href="{{ url_for('diet20') }}" style="text-decoration: none;">Diet</a>
             </div>
         </div>
 
@@ -39,7 +39,7 @@
                 <img src="{{url_for('static',filename='./hospital-near-me.png')}}" alt="" class="hospital-near-me-image">
             </div>
             <div>
-                <a  class="hospital-near-me-box" href="#">Cardiologists near me</a>
+                <a  class="hospital-near-me-box" href="{{ url_for('exercise20') }}">Excercise</a>
             </div>
         </div>
 

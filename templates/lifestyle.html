@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifestyle</title>
-    <link rel="stylesheet" href="lifestyle.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='lifestyle.css')}}">
 </head>
 <body>
     <navbar class="navbar">
         <ul class="nav">
-            <li class="nav-item" id="hriday"><img src="./heart.png" style="width: 30px;"> HRIDAY</li>
-            <li class="nav-item" id="Home">Home</li>
+            <li class="nav-item" id="hriday"><img src="{{url_for('static',filename='heart.png')}}" style="width: 30px;"> HRIDAY</li>
+            <li class="nav-item" id="Home"> <a href="{{ url_for('index') }}" style="text-decoration: none;">Home</a></li>
             <li class="nav-item" id="About-us">About Us</li>
             <li class="nav-item" id="Contact-us">Contact Us</li>
         </ul>
     </navbar>
     <div class="content">
         <div class="yoga">
-            <img src="image.png" class="yoga-image" alt="">
+            <img src="{{url_for('static',filename='image.png')}}" class="yoga-image" alt="">
             <div class="yoga-text">YOGA</div>
         </div>
         <div class="exercise">
@@ -26,7 +26,7 @@
      
             
             <div class="container">
-              <img src="./image.png" alt="Avatar" class="image">
+              <img src="{{url_for('static',filename='image.png')}}" alt="Avatar" class="image">
               <div class="overlay">
                 <div class="text">Yoga</div>
               </div>

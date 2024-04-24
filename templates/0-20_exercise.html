@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise Made For You</title>
-    <link rel="stylesheet" href="/Sem4MPR/static/0-20.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='0-20.css')}}">
 </head>
 <body>
     <div class="navbar">
         <ul class="nav">
-            <a class="nav-items" id="HRIDAY" href="index.html" style="display: flex; flex-direction: row;"><img src="/Sem4MPR/static/heart.png" alt="" style="width: 30px;">HRIDAY</a>
-            <a class="nav-items" id="Home" href="index.html">Home</a>
+            <a class="nav-items" id="HRIDAY" href="{{ url_for('index') }}" style="display: flex; flex-direction: row;"><img src="{{url_for('static',filename='heart.png')}}" alt="" style="width: 30px;">HRIDAY</a>
+            <a class="nav-items" id="Home" href="{{ url_for('index') }}">Home</a>
             <a class="nav-items" id="About_us" href="#">About Us</a>
             <a class="nav-items" id="Contact_us" href="#">Contact us</a>
         </ul>
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="big-image">
-                    <img class="first-image" src="/Sem4MPR/static/0-20_exercise.png" alt="">
+                    <img class="first-image" src="/{{url_for('static',filename='0-20_exercise.jpg')}}" alt="">
                 </div>
 
                 
@@ -70,17 +70,17 @@
             <div class="most-popular">Most Popular</div>
 
             <div class="left-one">
-                <img src="/Sem4MPR/static/one.jpg" alt="" class="one">
+                <img src="{{url_for('static',filename='one.jpg')}}" alt="" class="one">
                 <a class="one-text">How regular exercise stimulates <br> your brain and heart</a>
             </div>
 
             <div class="left-two">
-                <img src="/Sem4MPR/static/two.jpg" alt="" class="two">
+                <img src="{{url_for('static',filename='two.jpg')}}" alt="" class="two">
                 <div class="two-text">Healthy Diet helps a healthy Heart</div>
             </div>
 
             <div class="left-three">
-                <img src="/Sem4MPR/static/three.jpg" alt="" class="three">
+                <img src="{{url_for('static',filename='three.jpg')}}" alt="" class="three">
                 <div class="three-text" href="#">Fun Facts You Didnt Know About Your Heart</div>
             </div>
 
