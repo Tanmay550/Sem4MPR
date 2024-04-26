@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='after.css') }}">
+    <script>
+        function openInNewTab(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
+    </script>
 </head>
 <body>
     <navbar class="navbar">
@@ -18,7 +24,7 @@
     
     <div class="content">
             <h1 class="Prediction">Prediction Result</h1>
-            <p class="Prediction-text">We predict a ten-year coronary heart disease probability of &nbsp <b>{{ pred }} %</b> {{ string }}</p>
+            <p class="Prediction-text">We predict a ten-year coronary heart disease probability of &nbsp <b>{{ pred }} %</b></p>
     </div>
     <div class="features" >
         
@@ -39,7 +45,10 @@
                 <img src="{{url_for('static',filename='./hospital-near-me.png')}}" alt="" class="hospital-near-me-image">
             </div>
             <div>
-                <a  class="hospital-near-me-box" href="{{ url_for('exercise20') }}">Excercise</a>
+                <a class="hospital-near-me-box" href="{{ url_for('cardio') }}" target="_blank">Cardiologists Near Me</a>
+
+
+
             </div>
         </div>
 
@@ -50,7 +59,7 @@
 
             </div>
             <div>
-                <a  class="wellbeing-box" href = "{{ url_for('wellbeing') }}">Well being resources</a>
+                <a  class="wellbeing-box" href = "{{ url_for('exercise20') }}">Exercise</a>
             </div>
         </div>
 

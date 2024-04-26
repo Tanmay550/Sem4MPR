@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify, redirect
 import joblib
 import numpy as np
 from scipy import optimize
+import webbrowser
 
 app = Flask(__name__)
 
@@ -29,7 +30,7 @@ def map():
 
 @app.route("/symptoms")
 def symptoms():
-    return render_template('symptoms.html')
+    return render_template('Symptoms copy.html')
 
 @app.route("/cause")
 def cause():
@@ -76,7 +77,11 @@ def exercise60():
     return render_template('40-60_exercise.html')
 
 
+
+
+
 @app.route("/predict", methods=['POST'])
+
 def HeartDiseasePrediction():
 
    
@@ -125,20 +130,26 @@ def HeartDiseasePrediction():
     
 
     if formatted_probability > 0 and formatted_probability <= 20:
-        return render_template('0-20.html', pred=formatted_probability, string = "Case 1")
+        return render_template('0-20.html', pred=formatted_probability )
     elif formatted_probability > 20 and formatted_probability <= 40:
-         return render_template('20-40.html', pred=formatted_probability, string = "Case 2")
+         return render_template('20-40.html', pred=formatted_probability )
     elif formatted_probability > 40 and formatted_probability <= 60:
-         return render_template('40-60.html', pred=formatted_probability, string = "Case 3")
+         return render_template('40-60.html', pred=formatted_probability)
     elif formatted_probability > 60 and formatted_probability <= 80:
-         return render_template('60-80.html', pred=formatted_probability, string = "Case 4")
+         return render_template('60-80.html', pred=formatted_probability)
     else:
-        return render_template('80-100.html', pred=formatted_probability, string = "Aap marne wale ho")
-    
+        return render_template('80-100.html', pred=formatted_probability)
     
 
-
-    
+@app.route('/cardio')
+def cardio():
+    try:
+        query = 'Cardiologist in Mumbai'
+        url = f'https://www.google.com/maps/search/{query.replace(" ", "+")}'
+        return redirect(url)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+ 
 
 if __name__ == "__main__":
     app.run(debug=True)
