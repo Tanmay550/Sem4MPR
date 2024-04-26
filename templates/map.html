@@ -54,8 +54,8 @@
 <body>
     <div class="navbar">
         <ul class="nav">
-            <a class="nav-items" id="HRIDAY" href="index.html" style="display: flex; flex-direction: row;"><img src="/Sem4MPR/static/heart.png" alt="" style="width: 30px;">HRIDAY</a>
-            <a class="nav-items" id="Home" href="index.html">Home</a>
+            <a class="nav-items" id="HRIDAY" href="{{ url_for('index') }}" style="display: flex; flex-direction: row;"><img src="{{url_for('static',filename='./heart.png')}}" alt="" style="width: 30px;">HRIDAY</a>
+            <a class="nav-items" id="Home" href="{{ url_for('index') }}">Home</a>
             <a class="nav-items" id="About_us" href="#">About Us</a>
             <a class="nav-items" id="Contact_us" href="#">Contact us</a>
         </ul>
