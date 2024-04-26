@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifestyle</title>
-    <link rel="stylesheet" href="/static/lifestyle.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='lifestyle.css')}}">
+
+
+
+    </script>
 </head>
 <body>
     <navbar class="navbar">
@@ -16,22 +20,39 @@
         </ul>
     </navbar>
     <div class="content">
-        <a class="yoga" href = "./0-20_exercise.html">
-            <img src="/static/yoga_lifestyle.png" class="yoga-image" alt="Avatar">
+        <a href="{{ url_for('exercise20')}}" >
+        <div class="yoga"  >
+            
+
+            <img src="{{url_for('static',filename='yoga_lifestyle.png')}}" class="yoga-image" alt="Avatar">
         
-                <div class="yoga-text">YOGA</div>
+           <div  class="yoga-text">YOGA</div>
               
-        </a>
-        
-        <div class="exercise">
-            <img src="/static/exercise_lifestyle.png" alt="" class="exercise-image">
-            <div class="exercise-text">EXERCISE</div>
         </div>
-     
-        <div class="diet">
-            <img src="/static/diet_lifestyle.png" alt="" class="diet-image">
-            <div class="diet-text">DIET</div>
-        </div>    
+    </a>
+
+    <a href="{{ url_for('exercise60')}}" >
+        <div class="exercise"  >
+            
+
+            <img src="{{url_for('static',filename='exercise_lifestyle.png')}}" class="exercise-image" alt="Avatar">
+        
+           <div  class="exercise-text">EXERCISE</div>
+              
+        </div>
+    </a>
+
+    <a href="{{ url_for('diet60')}}" >
+        <div class="diet"  >
+            
+
+            <img src="{{url_for('static',filename='diet_lifestyle.png')}}" class="diet-image" alt="Avatar">
+        
+           <div  class="diet-text">DIET</div>
+              
+        </div>
+    </a>
+    
            
        
     </div>
