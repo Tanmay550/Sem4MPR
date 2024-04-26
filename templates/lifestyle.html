@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifestyle</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='lifestyle.css')}}">
+    <link rel="stylesheet" href="/static/lifestyle.css">
 </head>
 <body>
     <navbar class="navbar">
@@ -16,21 +16,23 @@
         </ul>
     </navbar>
     <div class="content">
-        <div class="yoga">
-            <img src="{{url_for('static',filename='image.png')}}" class="yoga-image" alt="">
-            <div class="yoga-text">YOGA</div>
-        </div>
+        <a class="yoga" href = "./0-20_exercise.html">
+            <img src="/static/yoga_lifestyle.png" class="yoga-image" alt="Avatar">
+        
+                <div class="yoga-text">YOGA</div>
+              
+        </a>
+        
         <div class="exercise">
-            hi
+            <img src="/static/exercise_lifestyle.png" alt="" class="exercise-image">
+            <div class="exercise-text">EXERCISE</div>
         </div>
      
-            
-            <div class="container">
-              <img src="{{url_for('static',filename='image.png')}}" alt="Avatar" class="image">
-              <div class="overlay">
-                <div class="text">Yoga</div>
-              </div>
-            </div>
+        <div class="diet">
+            <img src="/static/diet_lifestyle.png" alt="" class="diet-image">
+            <div class="diet-text">DIET</div>
+        </div>    
+           
        
     </div>
 </body>
