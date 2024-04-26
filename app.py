@@ -76,6 +76,21 @@ def diet60():
 def exercise60():
     return render_template('40-60_exercise.html')
 
+@app.route("/diet80")
+def diet80():
+    return render_template('60-80_diet.html')
+
+@app.route("/exercise80")
+def exercise80():
+    return render_template('60-80_exercise.html')
+
+@app.route("/diet100")
+def diet100():
+    return render_template('80-100_diet.html')
+
+@app.route("/exercise100")
+def exercise100():
+    return render_template('80-100_exercise.html')
 
 
 

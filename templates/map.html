@@ -6,6 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Exa:wght@100..900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Montserrat:wght@200;300;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@200;300;500;600&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    background: #eeeeee;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+}
+.nav-items{
+    padding: 15px 50px;
+    font-family: "Inter",sans-serif;
+    color: #009A9A;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#HRIDAY{
+    padding-right: 300px;
+    font-family: 'Inter',sans-serif;
+    color: #009A9A;
+    font-weight: 700;
+    font-size: 25px;
+    width: 40px;
+}
+
+.nav-items:hover{
+    color: #005b5b;
+}
         html, body {
             margin: 0;
             padding: 0;
@@ -19,6 +52,14 @@
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <ul class="nav">
+            <a class="nav-items" id="HRIDAY" href="index.html" style="display: flex; flex-direction: row;"><img src="/Sem4MPR/static/heart.png" alt="" style="width: 30px;">HRIDAY</a>
+            <a class="nav-items" id="Home" href="index.html">Home</a>
+            <a class="nav-items" id="About_us" href="#">About Us</a>
+            <a class="nav-items" id="Contact_us" href="#">Contact us</a>
+        </ul>
+    </div>
     <div id="map"></div>
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

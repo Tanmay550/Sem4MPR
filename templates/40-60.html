@@ -29,7 +29,7 @@
                 <img src="{{url_for('static',filename='Lifestyle.png')}}"  alt="Description"  class="Lifestyle-image">
             </div>
             <div>
-                <a  class="Lifestyle-box" href="#" style="text-decoration: none;">Lifestyle</a>
+                <a  class="Lifestyle-box" href="{{ url_for('diet60') }}" style="text-decoration: none;">Diet</a>
             </div>
         </div>
 
@@ -39,7 +39,7 @@
                 <img src="{{url_for('static',filename='./hospital-near-me.png')}}" alt="" class="hospital-near-me-image">
             </div>
             <div>
-                <a  class="hospital-near-me-box" href="#">Cardiologists near me</a>
+                <a  class="hospital-near-me-box" href="{{ url_for('cardio') }}" target="_blank">Cardiologists near me</a>
             </div>
         </div>
 
@@ -50,7 +50,7 @@
 
             </div>
             <div>
-                <a  class="wellbeing-box" href = "{{ url_for('wellbeing') }}">Well being resources</a>
+                <a  class="wellbeing-box" href = "{{ url_for('exercise60') }}">Excercise</a>
             </div>
         </div>
 
